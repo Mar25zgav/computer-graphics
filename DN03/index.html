@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3. Domača naloga: Štiriško drevo</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            overflow: hidden;
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+        }
+
+        .main {
+            margin:auto;
+            height: 500px;
+            width: 500px;
+            position: fixed;
+            top:0;
+            bottom:0;
+            left:0;
+            right:0;
+            text-align: center;
+        }
+
+        #myCanvas {
+            width: 500px;
+            height: 500px;
+            background-color: #d1d1d1;
+            margin-bottom: 5px;
+        }
+
+        input {
+            width: 100px;
+        }
+
+        .details {
+            padding: 10px;
+            text-align: left;
+        }
+
+        input[type=number]::-webkit-inner-spin-button, 
+        input[type=number]::-webkit-outer-spin-button { 
+        -webkit-appearance: none; 
+        margin: 0; 
+}
+    </style>
+</head>
+<body>
+    <div class="main">
+        <canvas id="myCanvas"></canvas>
+        <div class="controls">
+            Add number of circles: <input type="number" min="0" step="1" required placeholder="Press Enter" />
+            <button>Toggle boundaries</button>
+        </div>
+    </div>
+    <div class="details">
+        Objects: <label>0</label> <br>
+        Collisions: <label>0</label> <br>
+        Collision checks: <label>0</label> <br>
+        Checks with brute-force method: <label>0</label> <br>
+        ~<label></label> times faster
+    </div>
+    <script src="App.js"></script>
+</body>
+</html>
