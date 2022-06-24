@@ -1,0 +1,3 @@
+[submodule "KnivesOut"]
+	path = KnivesOut
+	url = https://github.com/DrKwojn/knives-out.git
